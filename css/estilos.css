@@ -1,0 +1,237 @@
+/*GENERAL*/
+
+body {
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: Arial;
+    color:black;
+}
+
+h2 {
+    padding: 10px 10px 5px 30px;
+}
+
+p {
+    padding: 5px 10px 5px 30px;
+}
+
+.textos p {
+    padding: 0px 0px 5px 15px;
+    margin: 0px;
+}
+
+/*CABECERA*/
+
+#menu {
+    height: 70px;
+}
+
+.imagencabeceraizq {
+    width: 200px;
+    float:left;
+}
+
+.imagencabecerader{
+    width: 50px;
+    float: right;
+}
+
+.imagencabecerader img{
+    width: 50px;
+}
+
+/*MÓDULO INTRODUCCIÓN*/
+
+#introduccion {
+    color: white;
+    height: auto;
+    float: left;
+}
+
+#introduccion_izq {
+    height: 494px;
+    background-color: #0E6655;
+}
+
+#introduccion_der {
+    height: 494px;
+    background-image: url("../imagenes/introduccion/huella.png");
+    background-repeat: no-repeat;
+}
+
+/*MÓDULO SERVICIOS*/
+
+.servicio {
+    height: 100px;
+}
+
+#servicios .imagen img {
+    margin-left: 30px;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+#servicios .subtitulo {
+    color: #0E6655;
+}
+
+/*MÓDULO NUESTRA HUELLA*/
+
+#huella {
+    background-color: #0E6655;
+    float:left;
+    padding-bottom:30px;
+    margin-bottom: 30px;
+}
+
+#huellaarriba {
+    color: white;
+}
+
+.punto {
+    float: left;
+    margin: 5px 30px 5px 30px;
+    background-color: white;
+    border-radius: 10px;
+}
+
+#huella .imagen {
+    float: left;
+    height: auto;
+}
+
+#huella img {
+    float: right;
+    width: 150px;
+    margin: 8px 20px 0px 25px;
+}
+
+.informacion p{
+    margin-top:0px;
+}
+
+
+/*MÓDULO CONTACTO*/
+
+#contacto{
+    float:left;
+    margin-bottom:30px;
+}
+
+#contacto p {
+    padding: 1px 10px 1px 30px;
+}
+
+.googlemaps{
+    margin-top:30px;
+}
+
+.googlemaps iframe {
+    width: 95%;
+}
+
+#contacto a {
+    color: #0E6655;
+    text-decoration: none;
+}
+
+/*MÓDULO PIE WEB*/
+#pie {
+    height: 70px;
+    float: left;
+    background-color: #0E6655;
+}
+
+.nombreempresa {
+    width:310px; 
+    margin-left:auto; 
+    margin-right:auto; 
+    height:70px;
+    padding-top:10px;
+}
+
+.nombreempresa img {
+    width:50px; 
+    float:left;
+}
+
+.nombreempresa p {
+    width:250px; 
+    float:left; 
+    color:white; 
+    padding:0px 0px 0px 10px;
+}
+
+/*PORCENTAJES FIJ0S DE COLUMNAS*/
+
+[class*="col-"] {
+    float: left;
+}
+
+.col-2 {
+    width: 16.66%;
+}
+
+.col-3 {
+    width: 24.5%;
+}
+
+.col-4 {
+    width: 33.33%;
+}
+
+.col-5 {
+    width: 41.66%;
+}
+
+.col-6 {
+    width: 50%;
+}
+
+.col-9 {
+    width: 75%;
+}
+
+.col-10 {
+    width: 83.33%;
+}
+
+.col-11 {
+    width: 91.66%;
+}
+
+.col-12 {
+    width: 100%;
+}
+
+/*para que se vea bien en móviles*/
+
+@media (max-width: 414.98px) {
+
+    body {
+        width: 98%;
+    }
+
+    /*pasamos las columnas del 50% al 100% param verlo mejor en móviles*/
+
+    #introduccion_izq, #introduccion_der, .servicio, .datoscontacto, .googlemaps {
+        width: 100%;
+        height: auto;
+        float: left;
+    }
+
+    #introduccion_der {
+        height: 215px;
+        width: 100%;
+        background-image: url("../imagenes/introduccion/huella_movil.png");
+        background-repeat: no-repeat;
+        text-align: center;
+    }
+
+    #servicios .imagen img {
+            width: 25px;
+    }
+}
+
